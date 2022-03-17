@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Providers\Movie;
 
 class PrimeVideo extends Controller
 {
     //
     public function index()
     {
-        $movies = [];
+        $movies = Movie::all();
         return view('movies', compact('movies'));
     }
 }
