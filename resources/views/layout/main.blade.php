@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/google-play-movies-tv-2038775-1721662.png">
     <title>Movies</title>
 </head>
 
@@ -14,8 +15,15 @@
         <div class="col-2">
             <h1>Movies.cracked</h1>
         </div>
+        <div class="col-8 nav-bar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+            </ul>
+        </div>
     </header>
-    @yield('content')
+    <main>
+        @yield('content')
+    </main>
     <script src="{{ asset('js/app.js') }}"></script>
     @yield('scripts')
 </body>
