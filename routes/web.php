@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', 'Dualshock@index')->name('home');
+
+
+Route::get('/movies', 'PrimeVideo@index')->name('movies');

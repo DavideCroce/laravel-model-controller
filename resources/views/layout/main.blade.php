@@ -12,13 +12,18 @@
 
 <body>
     <header>
-        <div class="col-2">
-            <h1>Movies.cracked</h1>
-        </div>
-        <div class="col-8 nav-bar">
-            <ul>
-                <li><a href="#">HOME</a></li>
-            </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h1>Movies.cracked</h1>
+                </div>
+                <div class="col-8 nav-bar">
+                    <ul>
+                        <li><a href="{{ route('home') }}">HOME</a></li>
+                        <li><a href="{{ route('movies') }}">ALL MOVIES</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
