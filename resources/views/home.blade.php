@@ -1,6 +1,8 @@
 @extends('layout.main')
 
 @section('content')
-    <h1>Last Movies</h1>
-    <h2>select a movie and have fun</h2>
+    <div class="container">
+        <h1>Last Movies</h1>
+        <h2>Click on ALL MOVIES to see the aviable movies</h2>
+    </div>
 @endsection

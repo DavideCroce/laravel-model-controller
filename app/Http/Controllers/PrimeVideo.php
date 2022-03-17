@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Providers\Movie;
+use App\Movie;
 
 class PrimeVideo extends Controller
 {
@@ -10,6 +10,7 @@ class PrimeVideo extends Controller
     public function index()
     {
         $movies = Movie::all();
+
         return view('movies', compact('movies'));
     }
 }
